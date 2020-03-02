@@ -34,8 +34,8 @@ export default class PagerTabIndicator extends Component {
     textStyle: Text.propTypes.style,
     selectedTextStyle: Text.propTypes.style,
     changePageWithAnimation: PropTypes.bool,
-    containerIconStyle: View.propTypes.style,
-    selectedContainerIconStyle: View.propTypes.style
+    containerIconStyle: ViewPropTypes.style,
+    selectedContainerIconStyle: ViewPropTypes.style
   };
 
   static defaultProps = {
@@ -83,14 +83,14 @@ export default class PagerTabIndicator extends Component {
         >
           <View
             style={[
-                isSelected ? selectedContainerIconStyle : containerIconStyle
+              isSelected ? selectedContainerIconStyle : containerIconStyle
             ]}
-        >
+          >
             <Image
-                style={[styles.image, isSelected ? selectedIconStyle : iconStyle]}
-                source={isSelected ? tab.selectedIconSource : tab.iconSource}
+              style={[styles.image, isSelected ? selectedIconStyle : iconStyle]}
+              source={isSelected ? tab.selectedIconSource : tab.iconSource}
             />
-        </View>
+          </View>
           <Text
             style={[
               isSelected ? styles.textSelected : styles.text,
