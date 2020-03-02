@@ -33,9 +33,7 @@ export default class PagerTabIndicator extends Component {
     selectedIconStyle: Image.propTypes.style,
     textStyle: Text.propTypes.style,
     selectedTextStyle: Text.propTypes.style,
-    changePageWithAnimation: PropTypes.bool,
-    containerIconStyle: ViewPropTypes.style,
-    selectedContainerIconStyle: ViewPropTypes.style
+    changePageWithAnimation: PropTypes.bool
   };
 
   static defaultProps = {
