@@ -72,8 +72,6 @@ declare module "react-native-best-viewpager" {
     selectedIconStyle?: ViewProperties["style"];
     textStyle?: ViewProperties["style"];
     selectedTextStyle?: ViewProperties["style"];
-    containerIconStyle?: ViewProperties["style"];
-    selectedContainerIconStyle?: ViewProperties["style"];
     changePageWithAnimation?: boolean;
   }
 
