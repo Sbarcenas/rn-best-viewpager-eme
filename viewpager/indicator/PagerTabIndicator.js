@@ -11,7 +11,8 @@ import {
   ViewPropTypes,
   Image,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
+    ScrollView
 } from "react-native";
 import IndicatorViewPager from "../IndicatorViewPager";
 
@@ -100,7 +101,7 @@ export default class PagerTabIndicator extends Component {
         </TouchableOpacity>
       );
     });
-    return <View style={[styles.container, style]}>{tabsView}</View>;
+    return <ScrollView  horizontal showsHorizontalScrollIndicator={false} style={[styles.container, style]}>{tabsView}</ScrollView>;
   }
 
   onPageSelected(e) {
