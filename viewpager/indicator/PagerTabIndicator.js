@@ -101,7 +101,9 @@ export default class PagerTabIndicator extends Component {
         </TouchableOpacity>
       );
     });
-    return <ScrollView  horizontal showsHorizontalScrollIndicator={false} style={[styles.container, style]}>{tabsView}</ScrollView>;
+    return <View>
+      <ScrollView  horizontal showsHorizontalScrollIndicator={false} style={[styles.container, style]}>{tabsView}</ScrollView>
+    </View>;
   }
 
   onPageSelected(e) {
